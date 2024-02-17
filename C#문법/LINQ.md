@@ -1,4 +1,5 @@
 LINQ와 SQL 기본 문법 
+=============
 
 	var Customers = db.GetTable<Customers>();
 	var custumQuery = from cust in customers
