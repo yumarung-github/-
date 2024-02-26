@@ -8,6 +8,7 @@ Delegate의 선언형식은 다음과 같다.
 delegate 반환형 변수명 ( 매개변수명,..)
 
 ex) delegate int customDelegate(int a, int b); 라는 델리게이트는
+
 int ExFunc(int a, int b){
   Debug.Log("이것은 함수입니다.");
 }
@@ -26,9 +27,12 @@ addListener의 함수는 기본적으로 매개변수가 없는 함수만 넣을
 무명메서드를 활용하여 인자가 있는 함수를 넣어준 방법이다.
 
 기본적으로 제공하는 델리게이트들에는 3가지가 있는데 
-  1. 반환형과 매개변수가 모두 없는 경우 - Action
-  2. 반환형이나 매개변수나 그 둘 다 있는 경우 - Func<>
-  3. 반환형이 bool형인 경우 - Predicate<T>
+<h2>
+  1. 반환형과 매개변수가 모두 없는 경우 - Action</h2>
+<h2>
+  2. 반환형이나 매개변수나 그 둘 다 있는 경우 - Func<></h2>
+<h2>
+  3. 반환형이 bool형인 경우 - Predicate<T></h2>
 가 있다.
 
 1. Action
