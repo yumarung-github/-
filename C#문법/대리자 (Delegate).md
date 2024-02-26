@@ -9,7 +9,7 @@ delegate 반환형 변수명 ( 매개변수명,..)
 
 ex) delegate int customDelegate(int a, int b); 라는 델리게이트는
 
-int ExFunc(int a, int b){
+int ExFunc(int a, int b){<br>
   Debug.Log("이것은 함수입니다.");
 }
 이와 같이 같은 형식의 함수를 담을 수 있다.
