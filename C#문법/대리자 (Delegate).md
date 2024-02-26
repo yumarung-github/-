@@ -26,16 +26,23 @@ button.onClick.AddListener(() => Func(0));
 addListener의 함수는 기본적으로 매개변수가 없는 함수만 넣을 수 있기 때문에
 무명메서드를 활용하여 인자가 있는 함수를 넣어준 방법이다.
 
-기본적으로 제공하는 델리게이트들에는 3가지가 있는데 
+기본적으로 제공하는 델리게이트들에는 3가지가 있는데 각각 예를 들어 간단하게 설명하겠다.
 <h2>
-  1. 반환형과 매개변수가 모두 없는 경우 - Action</h2>
+  1. 반환형이 없는 경우(void인 경우) - Action<> </h2>
+  Action action;
+  action += () => { Debug.Log("무명 함수 입니다.")};
+  Action<int, int> action2;
+  void ExFunction(int a, int b){
+    Debug.Log("예제 함수입니다.");
+  }
+  action2 += ExFunction(1,2);
 <h2>
   2. 반환형이나 매개변수나 그 둘 다 있는 경우 - Func<></h2>
+  <>안에 매개변수가 1개이면 매개변수만 있는 것이고 2개 이상이면 마지막이 반환형을 뜻한다.
+  Func<int>
 <h2>
   3. 반환형이 bool형인 경우 - Predicate<T></h2>
-가 있다.
 
-1. Action
 
 
 Func<>
